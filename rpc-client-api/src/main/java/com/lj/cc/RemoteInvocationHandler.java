@@ -24,7 +24,7 @@ public class RemoteInvocationHandler implements InvocationHandler {
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    public Object invoke(Object proxy, Method method, Object[] args) {
         System.out.println("come  in.....");
         RpcRequestVo rpcRequestVo = new RpcRequestVo();
         rpcRequestVo.setClassName(method.getDeclaringClass().getName());
